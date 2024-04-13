@@ -1,0 +1,8 @@
+.card{
+    display: flex;
+}
+
+.card img{
+    border-radius: 8px;
+    width: 225px;
+}
