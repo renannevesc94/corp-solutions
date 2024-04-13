@@ -1,10 +1,14 @@
 .container {
   width: 30vw;
-  height: 65vh;
+  max-width: 400px;
+  height: 70vh;
+  max-height: 500px;
   padding: 1rem;
   background-color: var(--light);
   box-shadow: var(--drop-shadow-1);
   display: flex;
+  align-items: center;
   flex-direction: column;
   justify-content: center;
+  border-radius: 10px;
 }
