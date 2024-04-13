@@ -14,7 +14,11 @@ export const Input = ({ label }: InputProps) => {
         onFocus={() => {
           setInputFocused(true);
         }}
-        onBlur={() => setInputFocused(false)}
+        onBlur={e => {
+          if (!e.target.value) {
+            setInputFocused(false);
+          }
+        }}
       />
       {isInputFocused && <label className={styles.label}>{label}</label>}
     </div>
