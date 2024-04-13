@@ -6,9 +6,13 @@ import { Button } from "../../../../components/Button";
 export const FormLogin = () => {
   return (
     <div className={styles.container}>
-      <h2>Login</h2>
-      <Input label="Seu e-mail" />
-      <InputPassword label="Sua a senha" />
+      <img src="./logo.webp" className={styles.imageTop} />
+      <h1>Login</h1>
+
+      <div className={styles.inputGroup}>
+        <Input label="Seu e-mail" />
+        <InputPassword label="Sua a senha" />
+      </div>
       <Button variant="secondary">Entrar</Button>
     </div>
   );

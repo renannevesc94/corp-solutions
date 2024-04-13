@@ -1,5 +1,5 @@
 import { forwardRef, useState } from "react";
-import style from "./style.module.css";
+import styles from "./style.module.css";
 import { ClosedEyes, OpenedEyes } from "../Icons";
 
 type InputPasswordProps = {
@@ -12,9 +12,9 @@ export const InputPassword = forwardRef<HTMLInputElement, InputPasswordProps>(
     const [showPassword, setShowPassword] = useState(false);
     const { label } = props;
     return (
-      <div className={style.InputContainer}>
+      <div className={styles.InputContainer}>
         <input
-          className={style.inputText}
+          className={styles.inputText}
           ref={ref}
           type={showPassword ? "text" : "password"}
           placeholder={isInputFocused ? " " : label}
@@ -29,13 +29,13 @@ export const InputPassword = forwardRef<HTMLInputElement, InputPasswordProps>(
           {...props}
         />
 
-        <button className={style.button} onClick={() => setShowPassword(!showPassword)}>
-          <span className={style.showPaswordIcon}>
+        <button className={styles.button} onClick={() => setShowPassword(!showPassword)}>
+          <span className={styles.showPaswordIcon}>
             {showPassword ? <OpenedEyes /> : <ClosedEyes />}
           </span>
         </button>
 
-        {isInputFocused && <label className={style.label}>{label}</label>}
+        {isInputFocused && <label className={styles.label}>{label}</label>}
       </div>
     );
   }
