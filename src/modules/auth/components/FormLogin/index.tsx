@@ -6,14 +6,20 @@ import { Button } from "../../../../components/Button";
 export const FormLogin = () => {
   return (
     <div className={styles.container}>
-      <img src="./logo.webp" className={styles.imageTop} />
-      <h1>Login</h1>
-
       <div className={styles.inputGroup}>
         <Input label="Seu e-mail" />
-        <InputPassword label="Sua a senha" />
+        <InputPassword label="Sua  senha" />
+        <div className={styles.actions}>
+          <div className={styles.inputContainer}>
+            <input type="checkbox" name="a" id="a" />
+            <label htmlFor="a"> Me mantenha conectado</label>
+          </div>
+          <span>Esqueci minha senha</span>
+        </div>
       </div>
-      <Button variant="secondary">Entrar</Button>
+      <div className={styles.buttonSubmit}>
+        <Button variant="secondary">Entrar</Button>
+      </div>
     </div>
   );
 };

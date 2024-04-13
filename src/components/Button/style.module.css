@@ -1,7 +1,7 @@
 .button {
   color: var(--light);
   width: 100%;
-  height: 12%;
+  height: 100%;
   border-radius: 2rem;
   font-weight: 500;
   cursor: pointer;
@@ -18,9 +18,9 @@
 }
 
 .secondary {
-  background-color: var(--light);
-  border: 1px solid var(--dark);
-  color: var(--dark);
+  background-color: var(--dark);
+  border: 1px solid var(--light);
+  color: var(--light);
 }
 
 .secondary:hover {
