@@ -7,6 +7,8 @@ import "./styles/main.css";
 
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { Home } from "./modules/home";
+import { Cursos } from "./modules/Cursos/cursos"
+import './index.css'
 import { Auth } from "./modules/auth";
 import { Layout } from "./modules/layout";
 import { Chat } from "./modules/chat";
@@ -35,6 +37,10 @@ const router = createBrowserRouter([
     path: "/chat",
     element: <Chat />,
   },
+  {
+    path: "/cursos",
+    element: <Cursos/>
+   },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
