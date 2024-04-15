@@ -9,10 +9,8 @@
 
 .bannerLogin {
   position: relative;
-  width: 38vw;
-  max-width: 620px;
-  height: 80vh;
-  max-height: 720px;
+  width: 50vw;
+  height: 100vh;
 }
 
 .bannerLogin img {
@@ -28,10 +26,8 @@
 }
 .containerFormLogin {
   color: var(--light);
-  width: 38vw;
-  max-width: 620px;
-  height: 80vh;
-  max-height: 720px;
+  width: 50vw;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -55,6 +51,7 @@
 .formLogin {
   height: 60%;
   width: 100%;
+  max-width: 640px;
   padding: 1rem 4.7rem;
   display: flex;
   margin-top: 3rem;

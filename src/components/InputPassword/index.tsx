@@ -4,13 +4,14 @@ import { ClosedEyes, OpenedEyes } from "../Icons";
 
 type InputPasswordProps = {
   label: string;
+  error?: string;
 } & React.ComponentPropsWithoutRef<"input">;
 
 export const InputPassword = forwardRef<HTMLInputElement, InputPasswordProps>(
   ({ ...props }: InputPasswordProps, ref) => {
     const [isInputFocused, setInputFocused] = useState(false);
     const [showPassword, setShowPassword] = useState(false);
-    const { label } = props;
+    const { label, error } = props;
     return (
       <div className={styles.InputContainer}>
         <input
@@ -34,7 +35,7 @@ export const InputPassword = forwardRef<HTMLInputElement, InputPasswordProps>(
             {showPassword ? <OpenedEyes /> : <ClosedEyes />}
           </span>
         </button>
-
+        {error && <span className={styles.errorMessage}>{error}</span>}
         {isInputFocused && <label className={styles.label}>{label}</label>}
       </div>
     );

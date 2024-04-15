@@ -2,11 +2,15 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./styles/reset.css";
 import "./styles/main.css";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { Home } from "./modules/home";
 import { Auth } from "./modules/auth";
 import { Layout } from "./modules/layout";
+import { AuthProvider } from "./providers/AuthProvider";
+
+const queryClient = new QueryClient();
 
 const router = createBrowserRouter([
   {
@@ -14,12 +18,17 @@ const router = createBrowserRouter([
     element: <Layout />,
     children: [
       {
-        path: "/home",
-        element: <Home />,
-      },
-      {
-        path: "/auth",
-        element: <Auth />,
+        element: <AuthProvider />,
+        children: [
+          {
+            path: "/auth",
+            element: <Auth />,
+          },
+          {
+            path: "/home",
+            element: <Home />,
+          },
+        ],
       },
     ],
   },
@@ -27,6 +36,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <QueryClientProvider client={queryClient}>
+      <RouterProvider router={router} />
+    </QueryClientProvider>
   </React.StrictMode>
 );

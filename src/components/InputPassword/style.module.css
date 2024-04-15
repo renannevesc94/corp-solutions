@@ -51,3 +51,9 @@
   cursor: pointer;
   outline: none;
 }
+
+.errorMessage {
+  font-size: 11px;
+  color: rgb(227, 64, 64);
+  margin-left: 1em;
+}

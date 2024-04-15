@@ -1,9 +1,7 @@
 import { z } from "zod";
 
 export const AuthSchema = z.object({
-  email: z
-    .string({ required_error: "Informe um email válido" })
-    .email({ message: "Email inválido" }),
+  email: z.string().email({ message: "Email inválido" }),
   password: z
     .string({ required_error: "Informe sua senha" })
     .min(6, { message: "Mínimo de 6 caracteres" }),
