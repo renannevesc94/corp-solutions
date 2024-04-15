@@ -2,12 +2,16 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./styles/reset.css";
 import "./styles/main.css";
+
+import "./styles/main.css";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { Home } from "./modules/home";
 import { Auth } from "./modules/auth";
 import { Layout } from "./modules/layout";
+import { Chat } from "./modules/chat";
+import { RelationShip } from "./modules/relationShip";
 import { AuthProvider } from "./providers/AuthProvider";
 
 const queryClient = new QueryClient();
@@ -15,20 +19,29 @@ const queryClient = new QueryClient();
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Layout />,
+    element: <AuthProvider />,
     children: [
       {
-        element: <AuthProvider />,
+        element: <Layout />,
         children: [
           {
-            path: "/auth",
-            element: <Auth />,
-          },
-          {
-            path: "/home",
+            path: "/",
             element: <Home />,
           },
+          {
+            path: "/relationShip",
+            element: <RelationShip />,
+          },
         ],
+      },
+
+      {
+        path: "/auth",
+        element: <Auth />,
+      },
+      {
+        path: "/chat",
+        element: <Chat />,
       },
     ],
   },

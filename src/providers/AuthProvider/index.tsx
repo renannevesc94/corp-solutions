@@ -1,24 +1,21 @@
 import { createContext, useContext } from "react";
-import { Outlet, useNavigate } from "react-router-dom";
-import Cookies from "js-cookie";
 
-//TIPAGEM DO CONTEXT
+import Cookies from "js-cookie";
+import { Outlet, useNavigate } from "react-router-dom";
+
 interface AuthContextType {
   login: (token: string) => void;
 }
 
-//CRIANDO O CONTEXT
 const AuthContext = createContext<AuthContextType>({
   login: () => {},
 });
 
-//BASE COM OS MÉTODOS E VALORES QUE VÃO ESTAR DISPONÍVEIS NO CONTEXT
 const useAuthBase = () => {
   const navigate = useNavigate();
-
   const login = (token: string) => {
     Cookies.set("token", token);
-    navigate("/home");
+    navigate("/");
   };
 
   return {
@@ -26,7 +23,6 @@ const useAuthBase = () => {
   };
 };
 
-//CRIANDO O PROVIDER E RECEBENDO UM "FILHO" JÁ ENVOLVIDO NELE
 export const AuthProvider = () => {
   const value = useAuthBase();
   return (
@@ -36,7 +32,6 @@ export const AuthProvider = () => {
   );
 };
 
-//CRIANDO UM HOOK PARA CONSUMO DO CONTEXT
 // eslint-disable-next-line react-refresh/only-export-components
 export const useAuth = () => {
   const context = useContext(AuthContext);
