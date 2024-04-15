@@ -3,6 +3,8 @@ import ReactDOM from "react-dom/client";
 import "./styles/reset.css";
 import "./styles/main.css";
 
+import "./styles/main.css";
+
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { Home } from "./modules/home";
 import { Auth } from "./modules/auth";
