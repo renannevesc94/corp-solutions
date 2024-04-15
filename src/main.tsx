@@ -8,6 +8,8 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { Home } from "./modules/home";
+import { Cursos } from "./modules/Cursos/cursos";
+import "./index.css";
 import { Auth } from "./modules/auth";
 import { Layout } from "./modules/layout";
 import { Chat } from "./modules/chat";
@@ -18,7 +20,6 @@ const queryClient = new QueryClient();
 
 const router = createBrowserRouter([
   {
-    path: "/",
     element: <AuthProvider />,
     children: [
       {
@@ -42,6 +43,10 @@ const router = createBrowserRouter([
       {
         path: "/chat",
         element: <Chat />,
+      },
+      {
+        path: "/cursos",
+        element: <Cursos />,
       },
     ],
   },
