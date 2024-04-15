@@ -1,6 +1,11 @@
+import { ReactNode } from 'react';
 import'./container.css';
 
-function Container({ children }) {
+interface ContainerProps{
+    children: ReactNode
+}
+
+function Container({ children }: ContainerProps) {
     return(
         <section className='container'>
             {children}
