@@ -2,10 +2,10 @@ import { Input } from "../../../../components/Input";
 import styles from "./style.module.css";
 import { InputPassword } from "../../../../components/InputPassword";
 import { Button } from "../../../../components/Button";
-import {useLogin } from "../../hooks/use-login";
+import { useLogin } from "../../hooks/use-login";
 
 export const FormLogin = () => {
-  const { register, errors, handleSubmit } = useLogin();
+  const { register, errors, handleSubmit, isPending } = useLogin();
   return (
     <form onSubmit={handleSubmit} className={styles.container}>
       <div className={styles.inputGroup}>
@@ -28,7 +28,9 @@ export const FormLogin = () => {
         </div>
       </div>
       <div className={styles.buttonSubmit}>
-        <Button variant="secondary">Entrar</Button>
+        <Button variant="secondary" isLoading={isPending}>
+          Entrar
+        </Button>
       </div>
     </form>
   );

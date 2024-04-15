@@ -6,6 +6,9 @@
   font-weight: 500;
   cursor: pointer;
   box-shadow: var(--drop-shadow-2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .primary {
