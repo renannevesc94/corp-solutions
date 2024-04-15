@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+:root {
+  --primary-color: #00663d;
+  --secondary-color: #00e087;
+  --dark: #000a06;
+  --light: #ffffff;
+  --success: #00c375;
+  --error: #f44236;
+
+  --disable1: #dce5e2;
+  --disable3: #3d403f;
+
+  --drop-shadow-1: 0px 4px 8px rgba(0, 0, 0, 0.35);
+  --drop-shadow-2: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  --drop-shadow-3: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
