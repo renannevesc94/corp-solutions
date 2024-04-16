@@ -7,9 +7,8 @@
 .content {
   width: 100%;
   height: 80%;
-  border: 1px solid red;
   position: relative;
-  background-image: linear-gradient(to right, transparent 10%, #00c375 30%);
+  background-image: linear-gradient(to left, transparent 20%, #00c375 90%);
 }
 
 .content img {
@@ -23,17 +22,6 @@
 .footer {
   width: 100%;
   height: 20%;
-  border: 1px solid green;
+  background-color: red;
+  display: grid;
 }
-/* .card img {
-  width: 500px;
-  border-radius: 8px;
-  transition: transform 0.3s ease;
-}
-
-.card img:hover {
-  transform: scale(1.15);
-  border-radius: 10px;
-  box-shadow: 0 0 10px #222;
-}
- */
