@@ -14,7 +14,8 @@ import { Auth } from "./modules/auth";
 import { Layout } from "./modules/layout";
 import { Chat } from "./modules/chat";
 import { RelationShip } from "./modules/relationShip";
-import { Provider } from "./context/Provider";
+/* import { Provider } from "./context/Provider"; */
+import { AcessibilityProvider } from "./providers/AccessibilityProvider";
 
 const queryClient = new QueryClient();
 
@@ -28,7 +29,7 @@ enableMocking().then(() => {
     <React.StrictMode>
       <QueryClientProvider client={queryClient}>
         <Router>
-          <Provider>
+          <AcessibilityProvider>
             <AuthProvider>
               <Routes>
                 <Route
@@ -67,7 +68,7 @@ enableMocking().then(() => {
                 />
               </Routes>
             </AuthProvider>
-          </Provider>
+          </AcessibilityProvider>
         </Router>
       </QueryClientProvider>
     </React.StrictMode>

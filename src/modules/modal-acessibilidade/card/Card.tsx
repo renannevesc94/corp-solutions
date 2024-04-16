@@ -1,5 +1,6 @@
-import { ButtonHTMLAttributes, useContext, useState } from "react";
-import { AppContext } from "../../../context/AppContext";
+import { ButtonHTMLAttributes, useState } from "react";
+
+import { useAcessibility } from "../../../providers/AccessibilityProvider";
 
 interface CardProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   ferramenta: {
@@ -17,8 +18,8 @@ export function Card({ ferramenta, ...props }: CardProps) {
     guiaLeitura,
     setGuiaLeitura,
     lupaConteudo,
-    setLupaConteudo
-  } = useContext(AppContext);
+    setLupaConteudo,
+  } = useAcessibility();
 
   const [ativado, setAtivado] = useState(ferramenta.estado);
 
@@ -39,7 +40,7 @@ export function Card({ ferramenta, ...props }: CardProps) {
     }
     if (nome === "Lupa de conteúdo") {
       setLupaConteudo(!lupaConteudo);
-      console.log(!lupaConteudo)
+      console.log(!lupaConteudo);
     }
   };
 
@@ -54,9 +55,7 @@ export function Card({ ferramenta, ...props }: CardProps) {
         alt={ferramenta.nome}
         className={`icone-ferramenta ${ativado ? "icone-branco" : ""}`}
       />
-      <span className={`nome-ferramenta ${ativado ? "ativado" : ""}`}>
-        {ferramenta.nome}
-      </span>
+      <span className={`nome-ferramenta ${ativado ? "ativado" : ""}`}>{ferramenta.nome}</span>
       <span className={`estado-ferramenta ${ativado ? "ativado" : ""}`}>
         {ativado ? "Ativado" : "Desativado"}
       </span>

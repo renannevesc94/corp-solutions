@@ -1,25 +1,22 @@
-import React, { ReactNode, useContext } from 'react';
-import { AppContext } from '../../context/AppContext';
+import React, { ReactNode } from "react";
+
+import { useAcessibility } from "../../providers/AccessibilityProvider";
 
 interface LupaConteudoProps {
   children: ReactNode;
 }
 
 const LupaConteudo: React.FC<LupaConteudoProps> = ({ children }) => {
-  const {lupaConteudo } = useContext(AppContext);
+  const { lupaConteudo } = useAcessibility();
 
   const handleMouseOver = (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
-    if(lupaConteudo){
+    if (lupaConteudo) {
       const text = event.currentTarget.textContent;
-    console.log(text);}
+      console.log(text);
+    }
   };
 
-  return (
-      <div onMouseOver={handleMouseOver}>
-      {children}
-    </div>
-    
-  );
+  return <div onMouseOver={handleMouseOver}>{children}</div>;
 };
 
 export default LupaConteudo;

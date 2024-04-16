@@ -6,12 +6,11 @@ import iconeTipoFonte from "../../modal-acessibilidade/assets/icone-tipo-fonte.p
 import iconeGuiaLeitura from "../../modal-acessibilidade/assets/icone-guia-leitura.png";
 import iconeLupaConteudo from "../../modal-acessibilidade/assets/icone-lupa-conteudo.png";
 
-import { useContext } from "react";
-import { AppContext } from "../../../context/AppContext";
 import { Card } from "../card/Card";
+import { useAcessibility } from "../../../providers/AccessibilityProvider";
 
 export const Modal = () => {
-  const { modalAberto, setModalAberto } = useContext(AppContext);
+  const { modalAberto, setModalAberto } = useAcessibility();
 
   const controleTexto = [
     { icone: iconeTamanhoFonte, nome: "Tamanho de fonte", estado: false },
@@ -28,21 +27,10 @@ export const Modal = () => {
         <div className="content-modal">
           <div className="container-header-modal">
             <div className="content-header-modal">
-              <img
-                src={logotipo}
-                alt="logotipo corp solutions"
-                className="logotipo"
-              />
+              <img src={logotipo} alt="logotipo corp solutions" className="logotipo" />
 
-              <button
-                onClick={() => setModalAberto(!modalAberto)}
-                className="botao-fechar"
-              >
-                <img
-                  src={iconeFechar}
-                  alt="icone-fechar"
-                  className="icone-fechar"
-                />
+              <button onClick={() => setModalAberto(!modalAberto)} className="botao-fechar">
+                <img src={iconeFechar} alt="icone-fechar" className="icone-fechar" />
               </button>
             </div>
           </div>
