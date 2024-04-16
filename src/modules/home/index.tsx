@@ -19,6 +19,7 @@ export const Home: React.FC = () => {
 
   return (
     <>
+
       {guiaLeitura && <Cursor />}
       <LupaConteudo>
         <div
@@ -60,6 +61,9 @@ export const Home: React.FC = () => {
           )}
         </div>
       </LupaConteudo>
+
+      <h1>HOME</h1>
+
     </>
   );
 };

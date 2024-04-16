@@ -1,11 +1,14 @@
 .button {
   color: var(--light);
   width: 100%;
-  height: 12%;
+  height: 100%;
   border-radius: 2rem;
   font-weight: 500;
   cursor: pointer;
   box-shadow: var(--drop-shadow-2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .primary {
@@ -18,12 +21,11 @@
 }
 
 .secondary {
-  background-color: var(--light);
-  border: 1px solid var(--dark);
-  color: var(--dark);
+  background-color: var(--dark);
+  border: 1px solid var(--light);
+  color: var(--light);
 }
 
 .secondary:hover {
-  background-color: #f2eeee;
-  color: var(--dark);
+  background-color: #011c117d;
 }
