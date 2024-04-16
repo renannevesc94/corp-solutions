@@ -14,6 +14,7 @@ import { Auth } from "./modules/auth";
 import { Layout } from "./modules/layout";
 import { Chat } from "./modules/chat";
 import { RelationShip } from "./modules/relationShip";
+import { Provider } from "./context/Provider";
 
 const queryClient = new QueryClient();
 
@@ -27,44 +28,46 @@ enableMocking().then(() => {
     <React.StrictMode>
       <QueryClientProvider client={queryClient}>
         <Router>
-          <AuthProvider>
-            <Routes>
-              <Route
-                path="/"
-                element={
-                  <Layout>
-                    <Home />
-                  </Layout>
-                }
-              />
-              <Route
-                path="/relationShip"
-                element={
-                  <Layout>
-                    <RelationShip />
-                  </Layout>
-                }
-              />
-              <Route path="/auth" element={<Auth />} />
+          <Provider>
+            <AuthProvider>
+              <Routes>
+                <Route
+                  path="/"
+                  element={
+                    <Layout>
+                      <Home />
+                    </Layout>
+                  }
+                />
+                <Route
+                  path="/relationShip"
+                  element={
+                    <Layout>
+                      <RelationShip />
+                    </Layout>
+                  }
+                />
+                <Route path="/auth" element={<Auth />} />
 
-              <Route
-                path="/chat"
-                element={
-                  <ProtectedRouter>
-                    <Chat />
-                  </ProtectedRouter>
-                }
-              />
-              <Route
-                path="/cursos"
-                element={
-                  <ProtectedRouter>
-                    <Cursos />
-                  </ProtectedRouter>
-                }
-              />
-            </Routes>
-          </AuthProvider>
+                <Route
+                  path="/chat"
+                  element={
+                    <ProtectedRouter>
+                      <Chat />
+                    </ProtectedRouter>
+                  }
+                />
+                <Route
+                  path="/cursos"
+                  element={
+                    <ProtectedRouter>
+                      <Cursos />
+                    </ProtectedRouter>
+                  }
+                />
+              </Routes>
+            </AuthProvider>
+          </Provider>
         </Router>
       </QueryClientProvider>
     </React.StrictMode>

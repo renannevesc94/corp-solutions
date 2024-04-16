@@ -56,3 +56,17 @@
   display: flex;
   margin-top: 3rem;
 }
+
+@media (max-width: 768px) {
+  .bannerLogin {
+    display: none;
+  }
+
+  .containerFormLogin {
+    width: 100%;
+  }
+
+  .formLogin {
+    padding: 1rem;
+  }
+}
