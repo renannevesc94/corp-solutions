@@ -1,7 +1,7 @@
 import { createContext, useContext, useState } from "react";
 
 import Cookies from "js-cookie";
-import { Outlet, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 interface AuthContextType {
   login: (token: string) => void;
@@ -38,13 +38,9 @@ const useAuthBase = () => {
   };
 };
 
-export const AuthProvider = () => {
+export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
   const value = useAuthBase();
-  return (
-    <AuthContext.Provider value={value}>
-      <Outlet />
-    </AuthContext.Provider>
-  );
+  return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
 };
 
 // eslint-disable-next-line react-refresh/only-export-components
