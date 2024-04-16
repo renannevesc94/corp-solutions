@@ -6,7 +6,7 @@ export const Rating = () => {
   const [rating, setRating] = useState(0);
 
   return (
-    <div className="card-body">
+    <div className="cardRating">
       {[...Array(5)].map((el, index) => (
         <button
           className={styles.buttonStar}

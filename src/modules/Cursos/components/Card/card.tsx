@@ -1,15 +1,26 @@
 /* import Carousel from "../Carousel/carousel"; */
 
 import { Rating } from "../Rating";
-import "./card.css";
+import styles from "./style.module.css";
 
-function Card({ id, imagem }) {
+type CardProps = {
+  id: string;
+  imagem: string;
+  title: string;
+};
+
+function Card({ id, imagem, title }: CardProps) {
   return (
-    <section className="card">
-      <a href={`https://www.youtube.com/watch?v=${id}`} rel="noreferrer noopener" target="_blank">
-        <img src={imagem} alt="capa" />
-      </a>
-      <Rating />
+    <section className={styles.card}>
+      <div className={styles.content}>
+        <img src="./public/cardsCourse/course01.png" alt="capa do curso" />
+
+        <img src="./cardsCourse/logoFull.png" alt="logo corp solution" />
+      </div>
+
+      <div className={styles.footer}>
+        <Rating />
+      </div>
     </section>
   );
 }
