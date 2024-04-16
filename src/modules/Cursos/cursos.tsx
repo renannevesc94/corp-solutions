@@ -6,9 +6,9 @@ import Category from './components/Category/category';
 import Carousel from './components/Carousel/carousel';
 
 const categories = [
-    'Videos 1',
-    'Videos 2',
-    'Videos 3',
+    'Combatendo o preconceito dentro da empresa',
+    'Trilha inclusão',
+    'Trilha diversidade',
     'Videos 4'
 ]
 
