@@ -39,3 +39,25 @@ export const LoadingIcon = () => {
     </svg>
   );
 };
+
+type IconStarProps = {
+  strokeColor: string;
+  fillColor: string;
+};
+
+export const IconStar = ({ strokeColor, fillColor }: IconStarProps) => {
+  return (
+    <svg
+      width="21"
+      height="19"
+      viewBox="0 0 21 19"
+      fill={fillColor}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M10.5 0.861666L13.8699 5.59139L13.9671 5.72788L14.127 5.77819L19.6666 7.52159L16.2097 12.1881L16.11 12.3228L16.1115 12.4904L16.1653 18.2976L10.6589 16.4519L10.5 16.3987L10.3411 16.4519L4.83473 18.2976L4.88849 12.4904L4.89004 12.3228L4.79028 12.1881L1.3334 7.52159L6.87299 5.77819L7.03285 5.72788L7.1301 5.59139L10.5 0.861666Z"
+        stroke={strokeColor}
+      />
+    </svg>
+  );
+};

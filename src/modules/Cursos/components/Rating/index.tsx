@@ -1,0 +1,26 @@
+import { useState } from "react";
+import { IconStar } from "../../../../components/Icons";
+import styles from "./styles.module.css";
+
+export const Rating = () => {
+  const [rating, setRating] = useState(0);
+
+  return (
+    <div className="card-body">
+      {[...Array(5)].map((el, index) => (
+        <button
+          className={styles.buttonStar}
+          onClick={() => {
+            setRating(index + 1);
+          }}
+        >
+          <IconStar
+            key={index}
+            strokeColor={index < rating ? "#00c375" : "#ccc"}
+            fillColor={index < rating ? "#00c375" : "none"}
+          />
+        </button>
+      ))}
+    </div>
+  );
+};
