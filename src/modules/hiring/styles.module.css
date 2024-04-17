@@ -3,5 +3,5 @@
     color: var(--light);
     display: flex;
     flex-direction: column;
-    gap: 60px;
+    gap: 32px;
 }
