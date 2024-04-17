@@ -18,7 +18,8 @@
 }
 
 .primary:hover {
-  background-color: #064a2f;
+  color: var(--light);
+  background-color: var(--primary-color);
 }
 
 .secondary {

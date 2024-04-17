@@ -1,7 +1,6 @@
 .headerContainer{
   background-color: #000A06;
   height: 120px;
-width: 100vw;
 }
 .header {
   padding: 0 60px;
@@ -20,12 +19,26 @@ width: 100vw;
   text-decoration: none;
 }
 
-.header ul > a:hover {
-  text-decoration: underline;
+.searchBox {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  background-color: var(--disable3);
+  opacity: 0.5;
+  border-radius: 50px;
+  padding: 10px;
+}
+
+.navigate {
+  width: 30%;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  gap: 20px;
 }
 
 input {
-  background-color: #181a19;
+  background-color: transparent;
   color: white;
   border: none;
   width: 90%;
@@ -43,6 +56,10 @@ input {
   background-color: #00e087;
   cursor: pointer;
 }
+.entrar:hover{
+  background-color: pink !important;
+}
+
 
 .entrar:hover {
   color: var(--light);
