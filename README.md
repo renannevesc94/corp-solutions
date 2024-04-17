@@ -4,8 +4,19 @@
 # # Repositório criado para atividade do AdaHack 
 
 
-## Live do Projeto
-<a>https://corp-solutions-three.vercel.app/</a>
+```
+ Clone este repositório
+ git clone (https://github.com/renannevesc94/corp-solutions.git)
+
+ Acesse a pasta do projeto no seu terminal/cmd
+ cd corp-solution
+
+ Instale as dependências
+ npm install
+
+ Execute a aplicação em modo de desenvolvimento
+ npm run dev
+```
 
 ## Instruções de login
 <p><b>Usuário:</b> usuario@corpsolution.com
