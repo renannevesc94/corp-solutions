@@ -1,6 +1,4 @@
 import { ReactNode } from "react";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 
 import Slider from "react-slick";
 import "./carousel.css";
@@ -14,8 +12,6 @@ function Carousel({ children }: ContainerProps) {
     dots: true,
     infinite: true,
     speed: 500,
-    centerMode: false,
-    variableWidth: true,
     adaptiveHeight: true,
     slideToShow: 3,
     slidesToScroll: 1,

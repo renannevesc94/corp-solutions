@@ -9,6 +9,7 @@ export const Rating = () => {
     <div className="cardRating">
       {[...Array(5)].map((el, index) => (
         <button
+          key={index}
           className={styles.buttonStar}
           onClick={() => {
             setRating(index + 1);
