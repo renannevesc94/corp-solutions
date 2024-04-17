@@ -4,7 +4,6 @@ import logotipo from "../../modal-acessibilidade/assets/logotipo.png";
 import iconeTamanhoFonte from "../../modal-acessibilidade/assets/icone-tamanho-fonte.png";
 import iconeTipoFonte from "../../modal-acessibilidade/assets/icone-tipo-fonte.png";
 import iconeGuiaLeitura from "../../modal-acessibilidade/assets/icone-guia-leitura.png";
-import iconeLupaConteudo from "../../modal-acessibilidade/assets/icone-lupa-conteudo.png";
 
 import { Card } from "../card/Card";
 import { useAcessibility } from "../../../providers/AccessibilityProvider";
@@ -18,7 +17,6 @@ export const Modal = () => {
   ];
   const controleLeitura = [
     { icone: iconeGuiaLeitura, nome: "Guia de Leitura", estado: false },
-    { icone: iconeLupaConteudo, nome: "Lupa de conteúdo", estado: false },
   ];
 
   return (
