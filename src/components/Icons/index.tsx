@@ -39,3 +39,47 @@ export const LoadingIcon = () => {
     </svg>
   );
 };
+
+type IconStarProps = {
+  strokeColor: string;
+  fillColor: string;
+};
+
+export const IconStar = ({ strokeColor, fillColor }: IconStarProps) => {
+  return (
+    <svg
+      width="21"
+      height="19"
+      viewBox="0 0 21 19"
+      fill={fillColor}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M10.5 0.861666L13.8699 5.59139L13.9671 5.72788L14.127 5.77819L19.6666 7.52159L16.2097 12.1881L16.11 12.3228L16.1115 12.4904L16.1653 18.2976L10.6589 16.4519L10.5 16.3987L10.3411 16.4519L4.83473 18.2976L4.88849 12.4904L4.89004 12.3228L4.79028 12.1881L1.3334 7.52159L6.87299 5.77819L7.03285 5.72788L7.1301 5.59139L10.5 0.861666Z"
+        stroke={strokeColor}
+      />
+    </svg>
+  );
+};
+
+export const TimerIcon = () => {
+  return (
+    <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M8 5V9.2L10 12" stroke="white" stroke-width="2" stroke-linecap="round" />
+      <circle cx="8.5" cy="8.5" r="7.5" stroke="white" stroke-width="2" />
+    </svg>
+  );
+};
+
+export const EyesIcon = () => {
+  return (
+    <svg width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M0 6.15365C1.03501 2.59817 4.31773 0 8.20728 0C12.0968 0 15.3796 2.59818 16.4146 6.15365C15.3796 9.70912 12.0968 12.3073 8.20728 12.3073C4.31773 12.3073 1.03501 9.70912 0 6.15365ZM11.9657 6.15366C11.9657 8.2306 10.2821 9.91429 8.20512 9.91429C6.12818 9.91429 4.44449 8.2306 4.44449 6.15366C4.44449 4.07673 6.12818 2.39304 8.20512 2.39304C10.2821 2.39304 11.9657 4.07673 11.9657 6.15366ZM8.20453 8.20503C9.33741 8.20503 10.2558 7.28665 10.2558 6.15378C10.2558 5.02091 9.33741 4.10253 8.20453 4.10253C7.07166 4.10253 6.15328 5.02091 6.15328 6.15378C6.15328 7.28665 7.07166 8.20503 8.20453 8.20503Z"
+        fill="white"
+      />
+    </svg>
+  );
+};

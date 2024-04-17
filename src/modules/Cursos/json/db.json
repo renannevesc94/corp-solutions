@@ -1,147 +1,20 @@
-
 [
-    {
-        "id": "B_nq7VTJZds",
-        "title": "As paisagens do mundo",
-        "imagem": "/public/1.png",
-        "category": "Videos 1"
-    },
-    {
-        "id": "8PjBddZ2cdo",
-        "title": "Paisagens e suas transformações",
-        "imagem": "/public/1.png",
-        "category": "Videos 1"
-    },
-    {
-        "id": "yqZsBn5Z1xc",
-        "title": "Paisagem Geográfica e Espaço Geográfico",
-        "imagem": "/public/1.png",
-        "category": "Videos 1"
-    },
-    {
-        "id": "yqZsBn5Z1xc",
-        "title": "Paisagem Geográfica e Espaço Geográfico",
-        "imagem": "/public/1.png",
-        "category": "Videos 1"
-    },
-    {
-        "id": "yqZsBn5Z1xc",
-        "title": "Paisagem Geográfica e Espaço Geográfico",
-        "imagem": "/public/1.png",
-        "category": "Videos 1"
-    },
-    {
-        "id": "yqZsBn5Z1xc",
-        "title": "Paisagem Geográfica e Espaço Geográfico",
-        "imagem": "/public/1.png",
-        "category": "Videos 1"
-    },
-    {
-        "id": "ee15tCw1kYo",
-        "title": "Espaço, Lugar e Território",
-        "imagem": "/public/1.png",
-        "category": "Videos 1"
-    },
-    {
-        "id": "YzBkkC2SXxM",
-        "title": "Formas de representação da Terra: os mapas",
-        "imagem": "/public/1.png",
-        "category": "Videos 1"
-    },
-    {
-        "id": "B_nq7VTJZds",
-        "title": "As paisagens do mundo",
-        "imagem": "/public/2.png",
-        "category": "Videos 2"
-    },
-    {
-        "id": "8PjBddZ2cdo",
-        "title": "Paisagens e suas transformações",
-        "imagem": "/public/2.png",
-        "category": "Videos 2"
-    },
-    {
-        "id": "8PjBddZ2cdo",
-        "title": "Paisagens e suas transformações",
-        "imagem": "/public/2.png",
-        "category": "Videos 2"
-    },
-    {
-        "id": "8PjBddZ2cdo",
-        "title": "Paisagens e suas transformações",
-        "imagem": "/public/2.png",
-        "category": "Videos 2"
-    },
-    {
-        "id": "8PjBddZ2cdo",
-        "title": "Paisagens e suas transformações",
-        "imagem": "/public/2.png",
-        "category": "Videos 2"
-    },
-    {
-        "id": "yqZsBn5Z1xc",
-        "title": "Paisagem Geográfica e Espaço Geográfico",
-        "imagem": "/public/2.png",
-        "category": "Videos 2"
-    },
-    {
-        "id": "ee15tCw1kYo",
-        "title": "Espaço, Lugar e Território",
-        "imagem": "/public/2.png",
-        "category": "Videos 2"
-    },
-    {
-        "id": "YzBkkC2SXxM",
-        "title": "Formas de representação da Terra: os mapas",
-        "imagem": "/public/2.png",
-        "category": "Videos 2"
-    },
-    {
-        "id": "B_nq7VTJZds",
-        "title": "As paisagens do mundo",
-        "imagem": "/public/3.png",
-        "category": "Videos 3"
-    },
-    {
-        "id": "8PjBddZ2cdo",
-        "title": "Paisagens e suas transformações",
-        "imagem": "/public/3.png",
-        "category": "Videos 3"
-    },
-    {
-        "id": "yqZsBn5Z1xc",
-        "title": "Paisagem Geográfica e Espaço Geográfico",
-        "imagem": "/public/3.png",
-        "category": "Videos 3"
-    },
-    {
-        "id": "yqZsBn5Z1xc",
-        "title": "Paisagem Geográfica e Espaço Geográfico",
-        "imagem": "/public/3.png",
-        "category": "Videos 3"
-    },
-    {
-        "id": "yqZsBn5Z1xc",
-        "title": "Paisagem Geográfica e Espaço Geográfico",
-        "imagem": "/public/3.png",
-        "category": "Videos 3"
-    },
-    {
-        "id": "yqZsBn5Z1xc",
-        "title": "Paisagem Geográfica e Espaço Geográfico",
-        "imagem": "/public/3.png",
-        "category": "Videos 3"
-    },
-    {
-        "id": "ee15tCw1kYo",
-        "title": "Espaço, Lugar e Território",
-        "imagem": "/public/3.png",
-        "category": "Videos 3"
-    },
-    {
-        "id": "YzBkkC2SXxM",
-        "title": "Formas de representação da Terra: os mapas",
-        "imagem": "/public/3.png",
-        "category": "Videos 3"
-    }
+  {
+    "id": "B_nq7VTJZds",
+    "title": "As paisagens do mundo",
+    "imagem": "/public/1.png",
+    "category": "Combatendo o preconceito dentro da empresa"
+  },
+  {
+    "id": "8PjBddZ2cdo",
+    "title": "Paisagens e suas transformações",
+    "imagem": "/public/1.png",
+    "category": "Combatendo o preconceito dentro da empresa"
+  },
+  {
+    "id": "yqZsBn5Z1xc",
+    "title": "Paisagem Geográfica e Espaço Geográfico",
+    "imagem": "/public/1.png",
+    "category": "Combatendo o preconceito dentro da empresa"
+  }
 ]

@@ -1,7 +1,11 @@
+/* import { useAuth } from "../../providers/AuthProvider"; */
 import styles from "./Header.module.css";
 import { NavLink } from "react-router-dom";
 
 export const Header = () => {
+  ///RETORNA TRUE SE O USUÁRIO ESTÁ LOGADO
+  /* const { isAuthenticated } = useAuth(); */
+
   return (
     <header className={styles.header}>
       <NavLink to="/">
@@ -26,7 +30,9 @@ export const Header = () => {
           <img src="lupa.png" alt="" />
           <input type="text" name="" id="" placeholder="Buscar..." />
         </div>
-        <div className={styles.entrar}>Entrar</div>
+        <div className={styles.entrar} onClick={() => {}}>
+          Entrar
+        </div>
       </div>
     </header>
   );
