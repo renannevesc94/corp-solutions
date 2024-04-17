@@ -1,9 +1,14 @@
 import { useAcessibility } from "../../providers/AccessibilityProvider";
 import styles from "./Footer.module.css";
+import { useNavigate } from "react-router-dom";
 
 export const Footer = () => {
   const { tipoFonteSerifada, fonteMaior } = useAcessibility();
-console.log(tipoFonteSerifada, fonteMaior);
+  const navigate = useNavigate();
+
+  const toCarreiras = () => {
+    navigate("/recrutamento");
+  };
 
   return (
     <section
@@ -54,7 +59,7 @@ console.log(tipoFonteSerifada, fonteMaior);
           <h4>Carreiras</h4>
           <ul>
             <a href="#">
-              <li>Nossas vagas</li>
+              <li onClick={toCarreiras}>Nossas vagas</li>
             </a>
             <a href="#">
               <li>Como mudar</li>
