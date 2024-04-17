@@ -6,29 +6,10 @@
 
 #### Live do Projeto
 <a>https://corp-solutions-three.vercel.app/</a>
+
 #### Instruções de login
 <b>Usuário:</b> usuario@corpsolution.com
-<b>password:</b> 12345678
-
-
-
-● 
-● 
-● 
-● 
-● 
-● 
-● 
-
-## Funcionalidades 📜
-
-● 
-● 
-● 
-● 
-● 
-● 
-● 
+<b>Password:</b> 12345678
 
 ## Tecnologias e Ferramentas Utilizadas 🕹️
 
@@ -37,7 +18,8 @@
 |  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="130px"> | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" width="130px">| <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original-wordmark.svg" width="130px"> 
 
 
-#### Libs e recursos:
+#### Libs e recursos 📜
+
 - Vite
 - TypeScript
 - React
@@ -45,19 +27,17 @@
 - React Router DOM
 - React Slick
 - Slick Carousel
-- axios
+- Axios
 - Zod
 
 ## Organização do Projeto 📈
+
 <p>O projeto tem uma organização em módulos com a seguiinte arquitetura:</p>
 <b> ./src/modules: </b> emos as pastas referentes a cada módulo do sistema e nelas são contidos os custom hooks e components exclussivos,</p>
 <p>/src/components:</b>  são armazenados os components universais ou que podem ser compartilhados por diferentes módulos</p>
 <p>./src/providers:</b>  São armazenados os providers de contexto da aplicação</p>
 <p>./src/services:</b>  São armazenados os serviços de requisição a APIs externas</p>
 <p>./src/clients:</b>  Abstrações do consumo de services</p>
-
-
-
   
 
 ## Integrantes do Grupo 💻
