@@ -2,51 +2,40 @@ import { Footer } from "../../components/Footer/Footer";
 import { Header } from "../../components/Header";
 import Banner from "./components/Banner/banner";
 import Card from "./components/Card/card";
-import styles from "./styles.module.css";
+import Container from "./components/Container/container";
+import "./styles.module.css";
 
+import videos from "./json/db.json";
+import Category from "./components/Category/category";
+
+const categories = [
+  "Combatendo o preconceito dentro da empresa",
+  "Trilha inclusão",
+  "Trilha diversidade",
+];
+
+function filterCategory(id) {
+  return videos.filter(video => {
+    return video.category === categories[id];
+  });
+}
 export const Cursos = () => {
   return (
     <>
       <Header />
       <Banner />
-      <div className={styles.banners}>
-        <div className={styles.header}>
-          <h2>Combatendo o preconceito dentro da empresa</h2>
-        </div>
-        <div className={styles.carousel}>
-          <Card />
-          <Card />
-          <Card />
-        </div>
 
-        <div className={styles.header}>
-          <h2>Trilha diversidade</h2>
-        </div>
-        <div className={styles.carousel}>
-          <Card />
-          <Card />
-          <Card />
-        </div>
-
-        <div className={styles.header}>
-          <h2>Trilha inclusão</h2>
-        </div>
-        <div className={styles.carousel}>
-          <Card />
-          <Card />
-          <Card />
-        </div>
-
-        <div className={styles.header}>
-          <h2>Benefícios da diversidade</h2>
-        </div>
-        <div className={styles.carousel}>
-          <Card />
-          <Card />
-          <Card />
-        </div>
-      </div>
-      <Footer />
+      <Container>
+        {categories.map((categoria, indx) => (
+          <Category key={indx} category={categoria}>
+            
+              {filterCategory(indx).map(video => (
+                <Card id={video.id} key={video.id} imagem={video.imagem} title={video.title} />
+              ))}
+          </Category>
+        ))}
+      </Container>
+      <Footer/>
     </>
   );
 };
