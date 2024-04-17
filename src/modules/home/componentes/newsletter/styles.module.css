@@ -108,4 +108,10 @@
 .card .link:hover {
     color: var(--primary-color);
 }
+
+@media (max-width: 991px) {
+    .newsletter > .content h2 {
+        font-size: 48px;
+    }
+}
   

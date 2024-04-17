@@ -41,4 +41,10 @@
 .quotation {
   display: flex;
   align-items: center;
+  gap: 10px;
+}
+
+.quotation > img {
+  width: 20px;
+  height: 20px;
 }

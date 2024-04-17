@@ -84,4 +84,7 @@
     .content p {
         font-size: 16px;
     }
+    .buttons {
+        justify-content: center;
+    }
 }
