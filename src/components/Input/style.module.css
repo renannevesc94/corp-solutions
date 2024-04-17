@@ -1,0 +1,39 @@
+.inputContainer {
+  position: relative;
+  width: 100%;
+}
+
+.inputText {
+  outline: none;
+  width: 100%;
+  height: 3em;
+  padding: 12px;
+  background-color: var(--dark);
+  color: var(--secondary-color);
+  border: 1px solid var(--light);
+  font-size: 0.875rem;
+}
+
+::-webkit-input-placeholder {
+  color: var(--light);
+}
+
+.inputText:focus,
+.inputText:not(:placeholder-shown) {
+  padding-top: 24px;
+  border: 1px solid var(--secondary-color);
+}
+.label {
+  color: var(--light);
+  position: absolute;
+  top: 2px;
+  left: 12px;
+  font-size: 0.75rem;
+  pointer-events: none;
+}
+
+.errorMessage {
+  font-size: 11px;
+  color: rgb(227, 64, 64);
+  margin-left: 1em;
+}

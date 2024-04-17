@@ -1,0 +1,77 @@
+.mainContainer {
+  width: 100%;
+  background-color: #000A06;
+  height: auto;
+}
+
+.container {
+  max-height: 250px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 60px;
+  max-width: 1720px;
+  margin: 0 auto;
+}
+
+.firstSection > img {
+  display: block;
+  width: 80px;
+  height: 40px;
+}
+
+.firstSection > p {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.socialMedia {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+.socialMedia > img {
+  width: 22px;
+  height: 22px;
+}
+
+.sobreNos > ul,
+.solucoes > ul,
+.carreiras > ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.sobreNos > ul li,
+.solucoes > ul li,
+.carreiras > ul li {
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+.sobreNos > ul a,
+.solucoes > ul a,
+.carreiras > ul a {
+  color: white;
+  text-decoration: none;
+}
+
+.sobreNos > ul a:hover,
+.solucoes > ul a:hover,
+.carreiras > ul a:hover {
+  text-decoration: underline;
+}
+
+.carreiras > h4:last-of-type {
+  margin-top: 10px;
+}
+
+.direitos > p {
+  color: white;
+  text-align: center;
+  padding: 40px 0;
+  font-size: 14px;
+  border-top: 1px solid white;
+
+}

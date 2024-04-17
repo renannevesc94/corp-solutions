@@ -1,0 +1,16 @@
+.banner {
+  width: 100%;
+  height: 347px;
+  background-image: url("/public/banner-cursos.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 68px;
+}
+
+@media only screen and (max-width: 768px) {
+  .banner {
+    height: auto;
+    background-size: contain;
+  }
+}

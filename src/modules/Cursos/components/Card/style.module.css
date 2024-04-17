@@ -1,0 +1,54 @@
+.card {
+  width: 25vw;
+  height: 35vh;
+  border: 1px solid var(--light);
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.content {
+  width: 100%;
+  height: 80%;
+  position: relative;
+  background-image: linear-gradient(to left, transparent 20%, #00c375 90%);
+}
+
+.content img {
+  height: 100%;
+  position: absolute;
+  right: 0;
+  z-index: 2;
+  opacity: 0.7;
+}
+
+.footer {
+  width: 100%;
+  height: 20%;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  color: var(--light);
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+}
+
+.iconContainer {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+@media only screen and (max-width: 768px) {
+  .card {
+    width: 90%;
+  }
+
+  .footer {
+    flex-direction: row;
+  }
+}

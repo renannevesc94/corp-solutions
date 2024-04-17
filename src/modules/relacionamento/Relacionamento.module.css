@@ -1,0 +1,44 @@
+.masterContainer {
+  margin: 60px;
+  min-height: 100%;
+}
+
+.feedbackContainer {
+  margin: 40px 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 30px;
+}
+
+.anonimo {
+  display: flex;
+  align-items: center;
+}
+
+.anonimo > p {
+  font-style: italic;
+}
+
+.anonimo > img {
+  display: block;
+  width: 50px;
+  height: 50px;
+}
+
+.feedback {
+  padding: 10px;
+  height: 300px;
+  width: 90%;
+  border: 1px solid black;
+  border-radius: 6px;
+  overflow-y: scroll;
+}
+
+.feedback > h2 {
+  margin: 10px 0;
+}
+
+.quotation {
+  display: flex;
+  align-items: center;
+}

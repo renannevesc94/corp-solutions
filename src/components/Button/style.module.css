@@ -1,0 +1,32 @@
+.button {
+  color: var(--light);
+  width: 100%;
+  height: 100%;
+  border-radius: 2rem;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: var(--drop-shadow-2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.primary {
+  background-color: var(--secondary-color);
+  border: none;
+  color: var(--dark);
+}
+
+.primary:hover {
+  background-color: #064a2f;
+}
+
+.secondary {
+  background-color: var(--dark);
+  border: 1px solid var(--light);
+  color: var(--light);
+}
+
+.secondary:hover {
+  background-color: #011c117d;
+}

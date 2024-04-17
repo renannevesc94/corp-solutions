@@ -1,0 +1,36 @@
+body {
+  height: 100vh;
+}
+.botao-acessibilidade {
+  background-color: transparent;
+  position: fixed;
+  right: 0;
+  top: 50%;
+  padding: 0;
+  border: none;
+  z-index: 10;
+}
+.botao-acessibilidade img {
+  width: 40px;
+  height: 40px;
+}
+.serifada {
+  font-family: "Times New Roman", Times, serif;
+}
+.fonteGrande {
+  font-size: large;
+}
+.mascaraLeitura:hover {
+  cursor: url("../modal-acessibilidade/assets/linha-leitura.png"), auto;
+}
+.filter {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 50%);
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
