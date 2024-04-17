@@ -10,7 +10,6 @@
   background-color: var(--dark);
   color: var(--light);
   border: 1px solid var(--light);
-  outline: none;
   font-size: 0.875rem;
 }
 
@@ -49,7 +48,6 @@
   background-size: 100%;
   border: none;
   cursor: pointer;
-  outline: none;
 }
 
 .errorMessage {

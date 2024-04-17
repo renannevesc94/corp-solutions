@@ -13,9 +13,10 @@ import { Cursos } from "./modules/Cursos/cursos";
 import { Auth } from "./modules/auth";
 import { Layout } from "./modules/layout";
 import { Chat } from "./modules/chat";
-import { RelationShip } from "./modules/relationShip";
+import { RelationShip } from "./modules/relationship";
 /* import { Provider } from "./context/Provider"; */
 import { AcessibilityProvider } from "./providers/AccessibilityProvider";
+import { Hiring } from "./modules/hiring";
 
 const queryClient = new QueryClient();
 
@@ -41,14 +42,22 @@ enableMocking().then(() => {
                   }
                 />
                 <Route
-                  path="/relationShip"
+                  path="/recrutamento"
+                  element={
+                    <Layout>
+                      <Hiring />
+                    </Layout>
+                  }
+                />
+                <Route
+                  path="/central"
                   element={
                     <Layout>
                       <RelationShip />
                     </Layout>
                   }
                 />
-                <Route path="/auth" element={<Auth />} />
+                <Route path="/login" element={<Auth />} />
 
                 <Route
                   path="/chat"

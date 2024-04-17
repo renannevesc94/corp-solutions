@@ -1,13 +1,41 @@
-/* import { useAuth } from "../../providers/AuthProvider"; */
+import { useAuth} from "../../providers/AuthProvider";
+import { useAcessibility } from "../../providers/AccessibilityProvider";
 import styles from "./Header.module.css";
 import { NavLink } from "react-router-dom";
+import { useEffect, useState, useRef } from "react";
 
 export const Header = () => {
-  ///RETORNA TRUE SE O USUÁRIO ESTÁ LOGADO
-  /* const { isAuthenticated } = useAuth(); */
+
+  const { isAuthenticated, logout } = useAuth();
+  const [buttonOption, setButtonOption] = useState('Entrar');
+  const currentRef = useRef<HTMLParagraphElement | null>(null)
+
+  useEffect(() => {
+    if (isAuthenticated) {
+      setButtonOption('Sair');
+    } else {
+      setButtonOption('Entrar');
+    }
+  }, [isAuthenticated]);
+
+  function handleLoginOrLogout() {
+    if(currentRef.current) {
+      switch(currentRef.current.textContent) {
+        case 'Entrar':
+            window.location.href = '/login'
+            break;
+        case 'Sair':
+          logout()
+          window.location.href = '/login'
+      }
+    }
+  }
+  const {tipoFonteSerifada, fonteMaior } =
+  useAcessibility();
 
   return (
-    <header className={styles.header}>
+    <div className={styles.headerContainer}>
+    <header className={`${styles.header} ${tipoFonteSerifada ? "serifada" : ""} ${fonteMaior ? "fonteGrande" : ""}`}>
       <NavLink to="/">
         <img src="logo.png" alt="" />
       </NavLink>
@@ -25,15 +53,13 @@ export const Header = () => {
           <li className={styles.list}>Treinamentos</li>
         </a>
       </ul>
-      <div className={styles.navigate}>
-        <div className={styles.searchBox}>
-          <img src="lupa.png" alt="" />
-          <input type="text" name="" id="" placeholder="Buscar..." />
+        <div className={styles.entrar} 
+          ref={currentRef}
+          onClick={handleLoginOrLogout}
+        >
+          {buttonOption}
         </div>
-        <div className={styles.entrar} onClick={() => {}}>
-          Entrar
-        </div>
-      </div>
     </header>
+    </div>
   );
 };
