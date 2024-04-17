@@ -1,23 +1,35 @@
-/* import { useAuth } from "../../providers/AuthProvider"; */
+import { useAuth } from "../../providers/AuthProvider";
 import { useAcessibility } from "../../providers/AccessibilityProvider";
-import { Button } from "../Button";
 import styles from "./Header.module.css";
 import { NavLink } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
+import { useEffect, useState, useRef } from "react";
 
 export const Header = () => {
-  const navigate = useNavigate();
+  const { isAuthenticated, logout } = useAuth();
+  const [buttonOption, setButtonOption] = useState("Entrar");
+  const currentRef = useRef<HTMLParagraphElement | null>(null);
 
-  ///RETORNA TRUE SE O USUÁRIO ESTÁ LOGADO
-  /* const { isAuthenticated } = useAuth(); */
+  useEffect(() => {
+    if (isAuthenticated) {
+      setButtonOption("Sair");
+    } else {
+      setButtonOption("Entrar");
+    }
+  }, [isAuthenticated]);
+
+  function handleLoginOrLogout() {
+    if (currentRef.current) {
+      switch (currentRef.current.textContent) {
+        case "Entrar":
+          window.location.href = "/login";
+          break;
+        case "Sair":
+          logout();
+          window.location.href = "/login";
+      }
+    }
+  }
   const { tipoFonteSerifada, fonteMaior } = useAcessibility();
-
-  const toLogin = () => {
-    navigate("/auth");
-  };
-  const toCarreiras = () => {
-    navigate("/recrutamento");
-  };
 
   return (
     <div className={styles.headerContainer}>
@@ -36,28 +48,15 @@ export const Header = () => {
           <a href="#">
             <li className={styles.list}>Soluções</li>
           </a>
-          <a href="#">
-            <li className={styles.list} onClick={toCarreiras}>Carreiras</li>
+          <a href="/recrutamento">
+            <li className={styles.list}>Carreiras</li>
           </a>
-          <a href="#">
+          <a href="/cursos">
             <li className={styles.list}>Treinamentos</li>
           </a>
         </ul>
-        <div className={styles.navigate}>
-          <div className={styles.searchBox}>
-            <img src="lupa.png" alt="" />
-            <input type="text" name="" id="" placeholder="Buscar..." />
-          </div>
-          <div className={styles.containerEntrar}>
-            <Button
-              className={styles.entrar}
-              onClick={toLogin}
-              variant={"primary"}
-              isLoading={false}
-            >
-              Entrar
-            </Button>
-          </div>
+        <div className={styles.entrar} ref={currentRef} onClick={handleLoginOrLogout}>
+          {buttonOption}
         </div>
       </header>
     </div>
