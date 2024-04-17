@@ -1,6 +1,16 @@
 body {
   height: 100vh;
 }
+.botao-chat-anonimo{
+  position: fixed;
+top: 80%;
+right: 1%;
+  background-color: transparent;
+  width: 100px;
+  border: none;
+  z-index: 20;
+  cursor: pointer;
+}
 .botao-acessibilidade {
   background-color: transparent;
   position: fixed;

@@ -1,39 +1,69 @@
 .vacancyList {
-    display: flex;
-    flex-direction: column;
-    width: 1700px;
-    max-width: calc(100% - 40px);
-    margin-inline: auto;
-    margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  width: 1700px;
+  max-width: calc(100% - 40px);
+  margin-inline: auto;
+  margin-bottom: 40px;
 }
 .vacancyItem {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 32px 16px;
-    max-width: 100%;
-    gap: 8px;
-    border-bottom: 1px solid var(--light);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px 16px;
+  max-width: 100%;
+  gap: 8px;
+  border-bottom: 1px solid var(--light);
+  text-transform: capitalize;
 }
+
 .vacancyName {
-    font-size: 24px;
-    cursor: pointer;
-    color: var(--secondary-color);
-    font-weight: 700;
-    line-height: 150%;
-    max-width: 100%;
+  font-size: 24px;
+  cursor: pointer;
+  color: var(--secondary-color);
+  font-weight: 700;
+  line-height: 150%;
+  max-width: 100%;
 }
 .vacancyType {
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 150%;
-    max-width: 100%;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 150%;
+  max-width: 100%;
 }
 .vacancyInfo {
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 150%;
-    max-width: 100%;
-    padding: 32px 16px;
-    border-bottom: 1px solid var(--light);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 150%;
+  max-width: 100%;
+  padding: 32px 16px;
+  border-bottom: 1px solid var(--light);
+}
+.inputPesquisaVaga {
+ width: 100%;
+  border: 1px solid white;
+  border-radius: 100px;
+  height: 48px;
+  padding: 0 32px;
+
+}
+
+.vagasFiltros {
+  margin: 48px 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 6rem;
+}
+.selectVagas{
+    display: inline-flex;
+    flex-direction: column;
+}
+.filtroVagaTipo {
+    margin-top: 16px;
+    padding-bottom: 8px;
+  color: white;
+  border: none;
+  /* width: 20rem; */
+  background-color: transparent;
+  border-bottom: 2px solid var(--secondary-color);
 }
