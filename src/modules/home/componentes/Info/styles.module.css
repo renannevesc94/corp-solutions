@@ -1,6 +1,6 @@
 .containerBg {
   background-color: var(--dark);
-  padding-block: 80px;
+  padding-block: 20px;
 }
 .container {
   width: 1440px;
@@ -14,8 +14,7 @@
 .title {
   text-align: center;
   font-size: 112px;
-  line-height: 105%;
-  margin: 24px 0;
+  line-height: 120%;
 }
 .title strong {
   color: var(--secondary-color);
@@ -32,18 +31,16 @@
   max-width: calc(100% - 20px);
   gap: 32px;
   margin: 0 auto;
-  margin: 24px auto;
 }
 .newsletterContainer > input  {
   min-width: 200px;
   flex: 1;
   background-color: var(--disable3);
-  opacity: 0.5;
   color: var(--light);
   border-radius: 50px;
   height: 100%;
   padding-inline: 32px 16px;
-  font-size: 16px;
+  font-size: 24px;
   font-weight: 600;
   border: none;
   height: 72px;

@@ -10,8 +10,8 @@ const users = [
   },
   {
     id: "02",
-    email: "joaozinho@hotmail.com",
-    password: "147852963",
+    email: "usuario@corpsolution.com",
+    password: "12345678",
     roole: "user",
   },
   {
