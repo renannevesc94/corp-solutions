@@ -4,12 +4,12 @@
 # # Repositório criado para atividade do AdaHack 
 
 
-#### Live do Projeto
+### Live do Projeto
 <a>https://corp-solutions-three.vercel.app/</a>
 
 ### Instruções de login
 <p><b>Usuário:</b> usuario@corpsolution.com
-<b>Password:</b> 12345678
+<p></p><b>Password:</b> 12345678
 
 ## Tecnologias e Ferramentas Utilizadas 🕹️
 
