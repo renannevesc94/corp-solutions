@@ -1,6 +1,6 @@
 .mainContainer {
   width: 100%;
-  background-color: black;
+  background-color: #000A06;
   height: auto;
 }
 
@@ -10,7 +10,8 @@
   display: flex;
   justify-content: space-between;
   padding: 40px 60px;
-  border-bottom: 1px solid white;
+  max-width: 1720px;
+  margin: 0 auto;
 }
 
 .firstSection > img {
@@ -27,7 +28,7 @@
 .socialMedia {
   margin-top: 20px;
   display: flex;
-  gap: 40px;
+  gap: 20px;
 }
 
 .socialMedia > img {
@@ -71,4 +72,6 @@
   text-align: center;
   padding: 40px 0;
   font-size: 14px;
+  border-top: 1px solid white;
+
 }

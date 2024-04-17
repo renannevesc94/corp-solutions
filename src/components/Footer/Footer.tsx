@@ -1,12 +1,18 @@
+import { useAcessibility } from "../../providers/AccessibilityProvider";
 import styles from "./Footer.module.css";
 
 export const Footer = () => {
+  const { tipoFonteSerifada, fonteMaior } = useAcessibility();
+console.log(tipoFonteSerifada, fonteMaior);
+
   return (
-    <section className={styles.mainContainer}>
-      <section className={styles.container}>
+    <section
+      className={styles.mainContainer}
+    >
+      <section className={`${styles.container} ${tipoFonteSerifada ? "serifada" : ""} ${fonteMaior ? "fonteGrande" : ""}`}>
         <div className={styles.firstSection}>
           <img src="logo.png" alt="" />
-          <p>Lorem ipsum dolor sit amet consectetur</p>
+          <p>Do recrutamento à gestão de <br/>desempenho, cuidamos de tudo em RH</p>
           <div className={styles.socialMedia}>
             <img src="instagram.png" alt="instagram" />
             <img src="github.png" alt="github" />
@@ -63,7 +69,7 @@ export const Footer = () => {
           </ul>
         </div>
       </section>
-      <section className={styles.direitos}>
+      <section className={`${styles.direitos} ${tipoFonteSerifada ? "serifada" : ""} ${fonteMaior ? "fonteGrande" : ""}`}>
         <p>Todos os direitos reservados Corp Solutions</p>
       </section>
     </section>

@@ -1,9 +1,11 @@
 import { useAuth} from "../../providers/AuthProvider";
+import { useAcessibility } from "../../providers/AccessibilityProvider";
 import styles from "./Header.module.css";
 import { NavLink } from "react-router-dom";
 import { useEffect, useState, useRef } from "react";
 
 export const Header = () => {
+
   const { isAuthenticated, logout } = useAuth();
   const [buttonOption, setButtonOption] = useState('Entrar');
   const currentRef = useRef<HTMLParagraphElement | null>(null)
@@ -28,9 +30,12 @@ export const Header = () => {
       }
     }
   }
+  const {tipoFonteSerifada, fonteMaior } =
+  useAcessibility();
 
   return (
-    <header className={styles.header}>
+    <div className={styles.headerContainer}>
+    <header className={`${styles.header} ${tipoFonteSerifada ? "serifada" : ""} ${fonteMaior ? "fonteGrande" : ""}`}>
       <NavLink to="/">
         <img src="logo.png" alt="" />
       </NavLink>
@@ -55,5 +60,6 @@ export const Header = () => {
           {buttonOption}
         </div>
     </header>
+    </div>
   );
 };
