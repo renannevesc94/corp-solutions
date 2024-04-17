@@ -1,13 +1,6 @@
-.starNull {
-}
-
 .buttonStar {
   background-color: transparent;
   border: none;
   padding: 0;
   cursor: pointer;
-  display: flex;
-}
-
-.cardRating {
 }
