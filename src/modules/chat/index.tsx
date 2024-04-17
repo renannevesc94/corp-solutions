@@ -1,5 +1,6 @@
 import { useForm, SubmitHandler, FieldValues } from "react-hook-form";
 import styles from "./Chat.module.css";
+import { NavLink } from "react-router-dom";
 
 export interface iChat {
   chatTitle: string;
@@ -21,9 +22,11 @@ export const Chat = () => {
   return (
     <div className={styles.container}>
       <div className={styles.leftSideContent}>
+        <NavLink to="/">
         <div className={styles.logo}>
           <img src="logo_preto.png" alt="Logo Corp Solutions" />
         </div>
+        </NavLink>
 
         <div className={styles.leftHeading}>
           <h1>Uma Oportunidade para crescer juntos</h1>

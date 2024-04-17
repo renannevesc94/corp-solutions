@@ -13,7 +13,7 @@ import { Cursos } from "./modules/Cursos/cursos";
 import { Auth } from "./modules/auth";
 import { Layout } from "./modules/layout";
 import { Chat } from "./modules/chat";
-import { RelationShip } from "./modules/relationShip";
+import { RelationShip } from "./modules/relationship";
 /* import { Provider } from "./context/Provider"; */
 import { AcessibilityProvider } from "./providers/AccessibilityProvider";
 

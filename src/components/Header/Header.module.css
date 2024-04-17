@@ -13,22 +13,6 @@
   text-decoration: none;
 }
 
-.searchBox {
-  display: flex;
-  align-items: center;
-  gap: 2px;
-  background-color: #181a19;
-  border-radius: 50px;
-  padding: 10px;
-}
-
-.navigate {
-  width: 30%;
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
 input {
   background-color: #181a19;
   color: white;
@@ -38,7 +22,7 @@ input {
 }
 
 .entrar {
-  width: 30%;
+  width: 100px;
   padding: 10px 0;
   border-radius: 50px;
   display: flex;
@@ -47,6 +31,13 @@ input {
   font-weight: 600;
   color: #000a06;
   background-color: #00e087;
+  cursor: pointer;
+}
+
+.entrar:hover {
+  color: var(--light);
+  background-color: var(--primary-color);
+  transition: 500ms all
 }
 
 .header > ul {
