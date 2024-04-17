@@ -66,13 +66,5 @@ export const feedbackItems = [
       comment: 'Excelente atendimento e produto de qualidade.',
       date: 'Maio/2024',
       rating: '5/5',
-    },
-    {
-        imageUrl: './people_01.png',
-        role: 'Desenvolvedor Web',
-        name: 'João Silva',
-        comment: 'Ótimo serviço, estou muito satisfeito!',
-        date: 'Abril/2024',
-        rating: '4/5',
     }
 ];
