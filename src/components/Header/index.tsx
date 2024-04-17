@@ -49,7 +49,7 @@ export const Header = () => {
         <a href="#">
           <li className={styles.list}>Carreiras</li>
         </a>
-        <a href="#">
+        <a href="/cursos">
           <li className={styles.list}>Treinamentos</li>
         </a>
       </ul>
