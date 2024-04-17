@@ -2,6 +2,7 @@
     background-color: var(--light);
     color: var(--dark);
     padding: 40px 20px;
+    margin-bottom: 40px;
 }
 
 .feedback > .content {
@@ -89,4 +90,9 @@
     font-size: 20px;
     font-weight: 600;
     line-height: 150%;
+}
+@media (max-width: 991px) {
+    .feedback > .content h2 {
+        font-size: 48px;
+    }
 }

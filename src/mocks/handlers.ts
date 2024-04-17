@@ -1,3 +1,5 @@
 import { authHandle } from "./handlers/authHandler";
 
-export default [...authHandle];
+import { hirinsHandle } from "./handlers/hiringsHandle";
+
+export default [...authHandle, ...hirinsHandle];

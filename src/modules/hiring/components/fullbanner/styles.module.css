@@ -1,0 +1,31 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.fullbanner {
+    position: relative;
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+}
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: -140px;
+    gap: 20px;
+    z-index: 2;
+}
+.hero img {
+    width: 268px;
+    border-radius: 16px;
+    box-shadow: var(--drop-shadow-2);
+}
+.hero h2 {
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 150%;
+}

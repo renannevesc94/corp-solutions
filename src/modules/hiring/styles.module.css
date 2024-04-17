@@ -1,0 +1,7 @@
+.hiringPage {
+    background-color: var(--dark);
+    color: var(--light);
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
