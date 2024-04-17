@@ -7,7 +7,6 @@ import S from "./styles.module.css";
 const Hiring = () => {
   const { data } = useGetHirings();
   console.log(data);
-
   return (
     <div className={S.hiringPage}>
       <Fullbanner />
