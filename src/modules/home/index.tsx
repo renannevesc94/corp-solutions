@@ -1,4 +1,7 @@
-// Home.tsx
+import { Info } from './componentes/Info';
+import { Feedback } from './componentes/feedback';
+import { KnowMore } from './componentes/knowMore';
+import { Newsletter } from './componentes/newsletter';
 import React from "react";
 
 import "./style.css";
@@ -20,6 +23,7 @@ export const Home: React.FC = () => {
           `}
         >
           <div>
+
             <h1>home</h1>
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
@@ -72,6 +76,12 @@ export const Home: React.FC = () => {
               essentially unchaetraset sheetstook a galley of type and scrambled it to make a type
               specimen book. It has survived not only five centurie Ipsum.
             </p>
+
+            <Info />
+            <KnowMore />
+            <Newsletter />
+            <Feedback />
+
           </div>
           {modalAberto ? (
             <Modal />
@@ -82,7 +92,11 @@ export const Home: React.FC = () => {
           )}
         </div>
 
+
       <h1>HOME</h1>
+
+      </LupaConteudo>
+
     </>
   );
 };
