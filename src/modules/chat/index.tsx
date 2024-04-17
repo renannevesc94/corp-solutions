@@ -22,12 +22,11 @@ export const Chat = () => {
   return (
     <div className={styles.container}>
       <div className={styles.leftSideContent}>
-        <NavLink to="/">
+        <NavLink className={styles.nav} to="/">
         <div className={styles.logo}>
           <img src="logo_preto.png" alt="Logo Corp Solutions" />
         </div>
         </NavLink>
-
         <div className={styles.leftHeading}>
           <h1>Uma Oportunidade para crescer juntos</h1>
         </div>
@@ -42,7 +41,7 @@ export const Chat = () => {
       </div>
 
       <div className={styles.rightSide}>
-        <form onSubmit={handleSubmit(onSubmit)}>
+        <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
           <input
             type="text"
             placeholder="Escreva um título"
@@ -62,11 +61,11 @@ export const Chat = () => {
             />
           </div>
           <br />
-          <button type="button" className={styles.formCancel}>
+          <button type="button" onClick={() => reset()} className={styles.formCancel}>
             Cancelar
           </button>
         </form>
       </div>
-    </div>
+      </div>
   );
 };

@@ -17,7 +17,7 @@ export const Relacionamento = () => {
               </div>
               <h2>{chat.chatTitle}</h2>
               <div className={styles.quotation}>
-                <img src="quotation.svg" alt="aspas" />
+                <img src="quotation.png" alt="aspas" />
                 {chat.chatMessage}
               </div>
             </div>
