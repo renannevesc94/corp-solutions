@@ -55,7 +55,6 @@
     color: var(--dark);
     cursor: pointer;
     border: none;
-    outline: none;
     width: 240px;
     font-weight: 600;
     font-size: 24px;
