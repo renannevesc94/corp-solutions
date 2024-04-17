@@ -4,12 +4,13 @@
 # # Repositório criado para atividade do AdaHack 
 
 
-### Live do Projeto
+## Live do Projeto
 <a>https://corp-solutions-three.vercel.app/</a>
 
-### Instruções de login
+## Instruções de login
 <p><b>Usuário:</b> usuario@corpsolution.com
 <p></p><b>Password:</b> 12345678
+
 
 ## Tecnologias e Ferramentas Utilizadas 🕹️
 
@@ -18,7 +19,7 @@
 |  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="130px"> | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" width="130px">| <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original-wordmark.svg" width="130px"> 
 
 
-#### Libs e recursos 📜
+## Libs e recursos 📜
 
 - Vite
 - TypeScript
@@ -29,6 +30,7 @@
 - Slick Carousel
 - Axios
 - Zod
+
 
 ## Organização do Projeto 📈
 
