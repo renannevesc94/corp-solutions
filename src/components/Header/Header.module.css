@@ -13,6 +13,10 @@
   text-decoration: none;
 }
 
+.header ul > a:hover {
+  text-decoration: underline;
+}
+
 input {
   background-color: #181a19;
   color: white;

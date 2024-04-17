@@ -20,11 +20,11 @@ export const Header = () => {
     if(currentRef.current) {
       switch(currentRef.current.textContent) {
         case 'Entrar':
-            window.location.href = '/auth'
+            window.location.href = '/login'
             break;
         case 'Sair':
           logout()
-          window.location.href = '/auth'
+          window.location.href = '/login'
       }
     }
   }
