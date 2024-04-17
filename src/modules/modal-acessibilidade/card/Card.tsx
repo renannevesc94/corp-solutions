@@ -17,8 +17,6 @@ export function Card({ ferramenta, ...props }: CardProps) {
     setFonteMaior,
     guiaLeitura,
     setGuiaLeitura,
-    lupaConteudo,
-    setLupaConteudo,
   } = useAcessibility();
 
   const [ativado, setAtivado] = useState(ferramenta.estado);
@@ -37,10 +35,6 @@ export function Card({ ferramenta, ...props }: CardProps) {
     }
     if (nome === "Guia de Leitura") {
       setGuiaLeitura(!guiaLeitura);
-    }
-    if (nome === "Lupa de conteúdo") {
-      setLupaConteudo(!lupaConteudo);
-      console.log(!lupaConteudo);
     }
   };
 

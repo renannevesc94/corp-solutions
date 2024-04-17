@@ -9,8 +9,6 @@ type AcessibilityContextType = {
   setFonteMaior: React.Dispatch<React.SetStateAction<boolean>>;
   guiaLeitura: boolean;
   setGuiaLeitura: React.Dispatch<React.SetStateAction<boolean>>;
-  lupaConteudo: boolean;
-  setLupaConteudo: React.Dispatch<React.SetStateAction<boolean>>;
 };
 
 export const AcessibilityContext = createContext<AcessibilityContextType>({
@@ -22,8 +20,6 @@ export const AcessibilityContext = createContext<AcessibilityContextType>({
   setFonteMaior: () => {},
   guiaLeitura: false,
   setGuiaLeitura: () => {},
-  lupaConteudo: false,
-  setLupaConteudo: () => {},
 });
 
 const useAppContextBase = () => {
@@ -32,7 +28,6 @@ const useAppContextBase = () => {
   const [fonteMaior, setFonteMaior] = useState<boolean>(false);
   const [mascaraLeitura, setMascaraLeitura] = useState<boolean>(false);
   const [guiaLeitura, setGuiaLeitura] = useState<boolean>(false);
-  const [lupaConteudo, setLupaConteudo] = useState<boolean>(false);
 
   return {
     modalAberto,
@@ -45,8 +40,6 @@ const useAppContextBase = () => {
     setMascaraLeitura,
     guiaLeitura,
     setGuiaLeitura,
-    lupaConteudo,
-    setLupaConteudo,
   };
 };
 

@@ -8,6 +8,7 @@ body {
   top: 50%;
   padding: 0;
   border: none;
+  z-index: 10;
 }
 .botao-acessibilidade img {
   width: 40px;
@@ -21,13 +22,6 @@ body {
 }
 .mascaraLeitura:hover {
   cursor: url("../modal-acessibilidade/assets/linha-leitura.png"), auto;
-  /* cursor: cell;
-    width: 100vw;
-    height: 10vh;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center; */
 }
 .filter {
   width: 100vw;
