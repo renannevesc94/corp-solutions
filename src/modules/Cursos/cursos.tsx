@@ -3,13 +3,11 @@ import Container from "./components/Container/container";
 import Card from "./components/Card/card";
 import videos from "./json/db.json";
 import Category from "./components/Category/category";
-import Carousel from "./components/Carousel/carousel";
 
 const categories = [
   "Combatendo o preconceito dentro da empresa",
   "Trilha inclusão",
   "Trilha diversidade",
-  "Videos 4",
 ];
 
 function filterCategory(id) {
@@ -25,11 +23,13 @@ export const Cursos = () => {
       <Container>
         {categories.map((categoria, indx) => (
           <Category key={indx} category={categoria}>
-            <Carousel>
-              {filterCategory(indx).map(video => (
+            
+              {filterCategory(0).map(video => (
                 <Card id={video.id} key={video.id} imagem={video.imagem} title={video.title} />
               ))}
-            </Carousel>
+              {filterCategory(1).map(video => (
+              <Card id={video.id} key={video.id} imagem={video.imagem} />
+            ))}
           </Category>
         ))}
       </Container>

@@ -10,14 +10,15 @@
 .category div {
     display: flex;
     justify-content: flex-start;
-    gap: 8px;
+    gap: 16px;
     width: 100%;
     align-items: center;
 }
 
-/* .category div > div {
-    width: 400px;
-} */
+.category div img {
+    max-width: 100%; 
+    height: auto; 
+}
 
 .category h2 {
     margin-top: 10px;
