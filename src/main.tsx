@@ -13,7 +13,7 @@ import { Cursos } from "./modules/Cursos/cursos";
 import { Auth } from "./modules/auth";
 import { Layout } from "./modules/layout";
 import { Chat } from "./modules/chat";
-import { RelationShip } from "./modules/relationship";
+import { Relacionamento } from "./modules/relacionamento";
 /* import { Provider } from "./context/Provider"; */
 import { AcessibilityProvider } from "./providers/AccessibilityProvider";
 import { Hiring } from "./modules/hiring";
@@ -53,7 +53,7 @@ enableMocking().then(() => {
                   path="/central"
                   element={
                     <Layout>
-                      <RelationShip />
+                      <Relacionamento />
                     </Layout>
                   }
                 />

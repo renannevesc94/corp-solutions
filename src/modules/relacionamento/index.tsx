@@ -1,6 +1,6 @@
-import styles from "./RelationShip.module.css";
+import styles from "./Relacionamento.module.css";
 import { iChat } from "../chat";
-export const RelationShip = () => {
+export const Relacionamento = () => {
   const chatsJson = localStorage.getItem("chats");
   const chats = chatsJson ? JSON.parse(chatsJson) : [];
 
