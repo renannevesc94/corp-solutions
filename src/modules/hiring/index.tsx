@@ -1,15 +1,19 @@
-import { Fullbanner } from "./components/fullbanner"
+import { Fullbanner } from "./components/fullbanner";
 import { Info } from "./components/info";
 import { Vacancies } from "./components/vacancies";
-import S from './styles.module.css';
+import { useGetHirings } from "./hooks/useGetHirings/use-get-hirings";
+import S from "./styles.module.css";
 
 const Hiring = () => {
-    return (
-        <div className={S.hiringPage}>
-            <Fullbanner />
-            <Info />
-            <Vacancies />
-        </div>
-    )
-}
-export { Hiring }
+  const { data } = useGetHirings();
+  console.log(data);
+
+  return (
+    <div className={S.hiringPage}>
+      <Fullbanner />
+      <Info />
+      <Vacancies />
+    </div>
+  );
+};
+export { Hiring };
