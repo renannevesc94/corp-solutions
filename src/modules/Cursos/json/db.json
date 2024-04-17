@@ -11,127 +11,67 @@
     "title": "Paisagem Geográfica e Espaço Geográfico",
     "imagem": "/public/1.png",
     "category": "Combatendo o preconceito dentro da empresa"
+  },
+  {
+    "id": "yqZsBn5Z1xc",
+    "title": "Paisagem Geográfica e Espaço Geográfico",
+    "imagem": "/public/1.png",
+    "category": "Combatendo o preconceito dentro da empresa"
+  },
+  {
+    "id": "yqZsBn5Z1xc",
+    "title": "Paisagem Geográfica e Espaço Geográfico",
+    "imagem": "/public/1.png",
+    "category": "Combatendo o preconceito dentro da empresa"
+  },
+  {
+    "id": "yqZsBn5Z1xc",
+    "title": "Paisagem Geográfica e Espaço Geográfico",
+    "imagem": "/public/1.png",
+    "category": "Trilha inclusão"
+  },
+  {
+    "id": "yqZsBn5Z1xc",
+    "title": "Paisagem Geográfica e Espaço Geográfico",
+    "imagem": "/public/1.png",
+    "category": "Trilha inclusão"
+  },
+  {
+    "id": "yqZsBn5Z1xc",
+    "title": "Paisagem Geográfica e Espaço Geográfico",
+    "imagem": "/public/1.png",
+    "category": "Trilha inclusão"
+  },
+  {
+    "id": "yqZsBn5Z1xc",
+    "title": "Paisagem Geográfica e Espaço Geográfico",
+    "imagem": "/public/1.png",
+    "category": "Trilha inclusão"
+  },
+  {
+    "id": "yqZsBn5Z1xc",
+    "title": "Paisagem Geográfica e Espaço Geográfico",
+    "imagem": "/public/1.png",
+    "category": "Trilha diversidade"
+  },
+  {
+    "id": "yqZsBn5Z1xc",
+    "title": "Paisagem Geográfica e Espaço Geográfico",
+    "imagem": "/public/1.png",
+    "category": "Trilha diversidade"
+  },
+  {
+    "id": "yqZsBn5Z1xc",
+    "title": "Paisagem Geográfica e Espaço Geográfico",
+    "imagem": "/public/1.png",
+    "category": "Trilha diversidade"
+  },
+  {
+    "id": "yqZsBn5Z1xc",
+    "title": "Paisagem Geográfica e Espaço Geográfico",
+    "imagem": "/public/1.png",
+    "category": "Trilha diversidade"
   }
 ]
 
-/* 
-{
-    "id": "yqZsBn5Z1xc",
-    "title": "Paisagem Geográfica e Espaço Geográfico",
-    "imagem": "/public/1.png",
-    "category": "Combatendo o preconceito dentro da empresa"
-},
-{
-    "id": "yqZsBn5Z1xc",
-    "title": "Paisagem Geográfica e Espaço Geográfico",
-    "imagem": "/public/1.png",
-    "category": "Combatendo o preconceito dentro da empresa"
-},
-{
-    "id": "yqZsBn5Z1xc",
-    "title": "Paisagem Geográfica e Espaço Geográfico",
-    "imagem": "/public/1.png",
-    "category": "Combatendo o preconceito dentro da empresa"
-},
-{
-    "id": "ee15tCw1kYo",
-    "title": "Espaço, Lugar e Território",
-    "imagem": "/public/1.png",
-    "category": "Combatendo o preconceito dentro da empresa"
-},
-{
-    "id": "YzBkkC2SXxM",
-    "title": "Formas de representação da Terra: os mapas",
-    "imagem": "/public/1.png",
-    "category": "Trilha inclusão"
-},
-{
-    "id": "B_nq7VTJZds",
-    "title": "As paisagens do mundo",
-    "imagem": "/public/1.png",
-    "category": "Trilha inclusão"
-},
-{
-    "id": "8PjBddZ2cdo",
-    "title": "Paisagens e suas transformações",
-    "imagem": "/public/1.png",
-    "category": "Trilha inclusão"
-},
-{
-    "id": "8PjBddZ2cdo",
-    "title": "Paisagens e suas transformações",
-    "imagem": "/public/2.png",
-    "category": "Trilha inclusão"
-},
-{
-    "id": "8PjBddZ2cdo",
-    "title": "Paisagens e suas transformações",
-    "imagem": "/public/2.png",
-    "category": "Trilha inclusão"
-},
-{
-    "id": "8PjBddZ2cdo",
-    "title": "Paisagens e suas transformações",
-    "imagem": "/public/2.png",
-    "category": "Trilha inclusão"
-},
-{
-    "id": "yqZsBn5Z1xc",
-    "title": "Paisagem Geográfica e Espaço Geográfico",
-    "imagem": "/public/2.png",
-    "category": "Trilha inclusão"
-},
-{
-    "id": "ee15tCw1kYo",
-    "title": "Espaço, Lugar e Território",
-    "imagem": "/public/2.png",
-    "category": "Trilha diversidade"
-},
-{
-    "id": "YzBkkC2SXxM",
-    "title": "Formas de representação da Terra: os mapas",
-    "imagem": "/public/2.png",
-    "category": "Trilha diversidade"
-},
-{
-    "id": "B_nq7VTJZds",
-    "title": "As paisagens do mundo",
-    "imagem": "/public/3.png",
-    "category": "Trilha diversidade"
-},
-{
-    "id": "8PjBddZ2cdo",
-    "title": "Paisagens e suas transformações",
-    "imagem": "/public/3.png",
-    "category": "Trilha diversidade"
-},
-{
-    "id": "yqZsBn5Z1xc",
-    "title": "Paisagem Geográfica e Espaço Geográfico",
-    "imagem": "/public/3.png",
-    "category": "Trilha diversidade"
-},
-{
-    "id": "yqZsBn5Z1xc",
-    "title": "Paisagem Geográfica e Espaço Geográfico",
-    "imagem": "/public/3.png",
-    "category": "Trilha diversidade"
-},
-{
-    "id": "yqZsBn5Z1xc",
-    "title": "Paisagem Geográfica e Espaço Geográfico",
-    "imagem": "/public/3.png",
-    "category": "Trilha diversidade"
-},
-{
-    "id": "yqZsBn5Z1xc",
-    "title": "Paisagem Geográfica e Espaço Geográfico",
-    "imagem": "/public/3.png",
-    "category": "Trilha diversidade"
-},
-{
-    "id": "ee15tCw1kYo",
-    "title": "Espaço, Lugar e Território",
-    "imagem": "/public/3.png",
-    "category": "Trilha diversidade"
-} */
+
