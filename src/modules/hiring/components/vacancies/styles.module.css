@@ -1,0 +1,29 @@
+.vacancyList {
+    display: flex;
+    flex-direction: column;
+    width: 1700px;
+    max-width: calc(100% - 40px);
+    margin: 40px auto;
+    border-top: 1px solid var(--light);
+}
+.vacancyItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px;
+    max-width: 100%;
+    border-bottom: 1px solid var(--light);
+}
+.vacancyName {
+    font-size: 24px;
+    color: var(--secondary-color);
+    font-weight: 700;
+    line-height: 150%;
+    max-width: 100%;
+}
+.vacancyType {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 150%;
+    max-width: 100%;
+}

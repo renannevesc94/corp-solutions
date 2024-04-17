@@ -2,6 +2,7 @@
     background-color: var(--light);
     color: var(--dark);
     padding: 40px 20px;
+    margin-bottom: 40px;
 }
 
 .feedback > .content {

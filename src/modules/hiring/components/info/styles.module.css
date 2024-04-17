@@ -1,0 +1,28 @@
+.infoContainer {
+    width: 1700px;
+    max-width: calc(100% - 40px);
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin: 0 auto;
+}
+.title {
+    max-width: calc(100% - 20px);
+    margin-top: 32px;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 150%;
+}
+.text {
+    max-width: calc(100% - 20px);
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: 400;
+}
+strong.text {
+    font-weight: 800;
+} 
+.infoContainer hr {
+    max-width: calc(100% - 20px);
+    margin-block: 32px;
+}
