@@ -1,35 +1,27 @@
+
+import { useGetHirings } from "../../hooks/useGetHirings/use-get-hirings";
 import { Vacancy } from "./Vacancy";
 import S from "./styles.module.css";
 
-const list = [
-  {
-    nome: "Analista de CRM - Júnior",
-    tipo: "remoto",
-    local: "São Paulo",
-    area: "front-end",
-    afirmativa: "PCD",
-    id: "1",
-  },
-  {
-    nome: "Analista de CRM - Júnior",
-    tipo: "remoto",
-    local: "São Paulo",
-    area: "front-end",
-    afirmativa: "PCD",
-    id: "2",
-  },
-];
+interface VacancyProps {
+    nome: string;
+    tipo: string;
+    id: string;
+}
 
-const Vacancies = () => {
-  return (
-    <>
-      <div className={S.vacancyList}>
-        {list.map(({ nome, tipo, id }) => {
-          return <Vacancy key={id} name={nome} type={tipo} />;
-        })}
-      </div>
-    </>
-  );
-};
+ const Vacancies = () => {
+    const { data } = useGetHirings();  
+
+    return(
+        <>
+            <div className={S.vacancyList}>
+                <div className={S.vacancyInfo}>{data && data.length} vagas encontradas</div>
+                {data && data.map(({nome, tipo, id}: VacancyProps) => {
+                    return <Vacancy key={id} name={nome} type={tipo} />
+                })}
+            </div>
+        </>
+    )
+}
 
 export { Vacancies };
